@@ -22,7 +22,7 @@ int main()
  q.front=0;
 
  do{
-    printf("\n 1.enqueue 2.dequeue 3.show all 4.front of queue 5.exit \n");
+    printf("\n QUEUE IMPLEMENTATION \n 1.Enqueue \n 2.Dequeue \n 3.Show all \n 4.Front of queue \n 5.exit \n");
     scanf("%d", &uans);
     switch (uans)
     {
@@ -57,7 +57,7 @@ void enqueue (struct queue*q, int val)
 {
     if (q->rear >= N-1)
     {
-        printf("queue is full");
+        printf("Queue is full");
     }
     else
     {
@@ -72,7 +72,7 @@ void dequeue (struct queue *q)
 
     if (q->front > q->rear)
     {
-        printf ("queue is empty");
+        printf ("Queue is empty");
     }
     else
     {
@@ -86,7 +86,7 @@ void showall(struct queue *q)
 
 if (q->front > q->rear)
     {
-        printf ("queue is empty");
+        printf ("Queue is empty");
     }
     else
     {
@@ -102,9 +102,9 @@ void frontq(struct queue *q)
 
 if (q->front > q->rear)
     {
-        printf ("queue is empty");
+        printf ("Queue is empty");
     }
     else
     {
-    printf("front item in queue is: %d", q->n[q->front]);}
+    printf("Front item in queue is: %d", q->n[q->front]);}
 }
